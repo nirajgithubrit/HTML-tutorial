@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>HTML FORM</title>
+        
+    </head>
+
+    <body>
+        <h1>HTML FORM</h1><br><br><br>
+        <form method="POST">
+            <fieldset>
+                <legend>Personal Info.</legend>
+             
+
+            Name: <input type="text" name="name" placeholder="Enter your name" autofocus required><br><br>
+            E-mail: <input type="email" name="email" placeholder="Enter your Email" autofocus required><br><br>
+            Password: <input type="password" name="password" placeholder="Enter your password" autofocus required><br><br>
+            Birth date: <input type="date" name="bday" required><br><br>
+            Age(between 1 to 21): <input type="number" min="1" max="21" required><br><br>
+            Gender: <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female <br><br>
+            Cast: <input type="checkbox" value="sc">SC 
+            <input type="checkbox" value="obc">OBC 
+            <input type="checkbox" value="others">ST <br><br>
+            LinkedIn: <input type="url" placeholder="Enter URL"><br><br>
+            Birth place: <input type="search" placeholder="Enter City" name="txtsearch"><br><br>
+            Birth time: <input type="time"><br><br>
+            Select your favourite color: <input type="color"><br><br>
+            Upload photo: <input type="file" name="myfile" required><br><br>
+            
+            
+            
+        </fieldset><br><br>
+        <fieldset>   
+            <legend>Study Detail</legend>
+
+            Branch: <select name="Branch" required> 
+                <option value="IT">IT</option>
+                <option value="ICT">ICT</option>
+                <option value="CE">CE</option>
+                <option value="ME">ME</option>
+            </select><br><br>
+
+            Course: <select size="3" required> 
+                <option>select</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JAVA</option>
+                <option>PHP</option>
+            </select><br><br>
+
+            Your choice: <select>
+                <option>select</option>
+                <optgroup label="Web designing">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                </optgroup>
+                <optgroup label="Web development">
+                    <option>PHP</option>
+                    <option>MySQL</option>
+                </optgroup>
+            </select><br><br>
+
+        </fieldset>
+
+            Range: <input type="range" min="0" max="10"><br><br>
+            
+            Comment: <textarea cols="50" rows="5">this is text area </textarea><br><br>
+
+        
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+            <input type="button" value="click me">
+
+        
+        </form>
+
+    </body>
+</html>
